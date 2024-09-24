@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* 共通 */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header{
+  background-color: #cc33ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ナビ */
+
+li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* メイン */
+.main{
+  position: relative;
+}
+.mainimg{
+  width: 100%;
+}
+h2 {
+  background-color: plum;
+  position: absolute;
+  top: 250px;
+  right: 0;
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.point{
+  color: yellow;
+}
+
+/* 商品一覧 */
+.gurume{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+.menu{
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.pic{
+  overflow: hidden;
+  width: 100%;
+}
+
+.pic :hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+h3{
+  margin: 30px;
+}
+
+.menu p{
+  margin: 20px;
+}
+
+.before{
+  text-decoration: line-through;
+}
+
+.yen{
+  color: gray;
+}
+
+.yen2{
+  color: red;
+  font-size: 25px;
+}
+input{
+  background-color: #FF66FF;
+  padding: 10PX 50PX;
+  border: solid gray;
+  font-weight: bold;
+}
+
+input:hover{
+  background-color: #cc33ff;
+}
+
+/* タブレット */
+@media (max-width: 600px){
+  .gurume{
+    flex-direction: column;
+  }
+  .menu{
+    width: 90%;
+    margin: 16px auto;
+  }
+}
